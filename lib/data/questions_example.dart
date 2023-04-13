@@ -2,70 +2,66 @@ import 'package:quizz_app/model/question_model.dart';
 
 List<QuestionModel> questions = [
   QuestionModel(
-    "How Many Whiskers does the average cat have on each side of its face ?",
+    "All cars, regardless newer or older models must change engine oil every ___ miles.",
     {
-      "1": false,
-      "3": false,
-      "12": true,
-      "5,007": false,
+      "500": false,
+      "3000": true,
+      "1000": false,
+      "5000": false,
     },
   ),
-  QuestionModel("When does a cat purr ?", {
-    "When it cares for its kittens": false,
-    "When it needs confort": false,
-    "When it feels content": false,
-    "All of the above": true,
+  QuestionModel("What does LSD stand for?", {
+    "Late Spin Delivery": false,
+    "Lowered Suspension Design": false,
+    "Lysergic Acid Diethylamide": false,
+    "Limited Slip Differential": true,
   }),
-  QuestionModel("What is the averge nulber of kittens in a litter ?", {
-    "1 to 2": false,
-    "3 to 5": true,
-    "8 to 10": false,
-    "12 to 14": false,
+  QuestionModel("What was the first muscle car?", {
+    "1969 Ford Mustang Boss 429": false,
+    "1949 Oldsmobile Rocket 88": true,
+    "1964 Pontiac GTO": false,
   }),
-  QuestionModel("How many moons does Mars have ?", {
-    "1": false,
-    "2": false,
-    "4": true,
-    "8": false,
+  QuestionModel("Which animal features in the logo for Lamborghini?", {
+    "Horse": false,
+    "Zebra": false,
+    "Bull": true,
+    "Giraffe": false,
   }),
-  QuestionModel("What is Mars's nickname ?", {
-    "The red planet": true,
-    "The dusty planet": false,
-    "The hot planet": false,
-    "The smelly planet": false,
+  QuestionModel("Which is the most expensive car?", {
+    "Ferrari F40": false,
+    "Bugatti Chiron": false,
+    "Bugatti Veyron": true,
+    "Koenigsegg Jesko Absolut": false,
   }),
-  QuestionModel("About How long would it take to travel to Mars ?", {
-    "Three days": false,
-    "A month": false,
-    "Eight months": true,
-    "Two years": false,
-  }),
-  QuestionModel(
-      "Mars is Named after the Roman god Mars. What is he the god of ?", {
-    "Fire": false,
-    "Love": false,
-    "Agriculture": false,
-    "War": true,
-  }),
-  QuestionModel("Mars Is the ___ planet from the sun ?", {
-    "Secon": false,
-    "Third": false,
-    "Fourth": true,
-    "Sixth": false,
+  QuestionModel("What was the original color for all Ferrari models?", {
+    "Black": false,
+    "Red": true,
+    "Yellow": false,
+    "White": false,
   }),
   QuestionModel(
-      "Where did Orville and Wilbur Wright build their first flying airplane ?",
-      {
-        "Paris, France": false,
-        "Boston, Massachusetts": false,
-        "Kitty Hawk, North Carolina": true,
-        "Tokyou, Japan": false,
-      }),
-  QuestionModel(
-      "The First astronuts to travel to space came from which country ?", {
-    "United States": false,
-    "Soviet Union (now Russia)": true,
-    "China": false,
-    "Rocketonia": false,
+      "Who was a driver for Alpha Romeo before founding his own company?", {
+    "Paul Walker": false,
+    "Vin Diesel": false,
+    "Enzo Ferrari": true,
+    "Michael Schumacher": false,
+  }),
+  QuestionModel("What is the best-selling electric car in history?", {
+    "Tesla Model 3": true,
+    "Mercedes-Benz EQS": false,
+    "Audi e-tron GT": false,
+    "Porsche Taycan": false,
+  }),
+  QuestionModel("What is the most expensive car in the world?", {
+    "Rolls-Royce Boat Tail": false,
+    "Pagani Huayra Roadster BC": false,
+    "Lamborghini Veneno": false,
+    "Bugatti La Voiture Noire": true,
+  }),
+  QuestionModel("How many rings are in the Audi logo?", {
+    "Three": false,
+    "Four": true,
+    "Countless": false,
+    "Five": false,
   }),
 ];

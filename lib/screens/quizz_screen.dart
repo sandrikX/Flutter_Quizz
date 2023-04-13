@@ -4,6 +4,8 @@ import 'package:quizz_app/screens/result_screen.dart';
 import 'package:quizz_app/ui/shared/color.dart';
 import 'package:quizz_app/widgets/quizz_widget.dart';
 import 'package:quizz_app/model/question_model.dart';
+// ignore_for_file: prefer_const_constructors
+// ignore_for_file: avoid_print
 
 class QuizzScreen extends StatefulWidget {
   const QuizzScreen({Key? key}) : super(key: key);
@@ -13,6 +15,7 @@ class QuizzScreen extends StatefulWidget {
 }
 
 class _QuizzScreenState extends State<QuizzScreen> {
+  // ignore: non_constant_identifier_names
   int question_pos = 0;
   int score = 0;
   bool btnPressed = false;
@@ -40,11 +43,12 @@ class _QuizzScreenState extends State<QuizzScreen> {
                   btnText = "See Results";
                 });
               }
+
               setState(() {
                 answered = false;
               });
             },
-            physics: new NeverScrollableScrollPhysics(),
+            physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
               return Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -100,6 +104,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                                     .values
                                     .toList()[i]) {
                                   score++;
+
                                   print("yes");
                                 } else {
                                   print("no");
@@ -110,11 +115,13 @@ class _QuizzScreenState extends State<QuizzScreen> {
                                 });
                               }
                             : null,
-                        child: Text(questions[index].answers!.keys.toList()[i],
-                            style: TextStyle(
-                              color: Colors.white,
+                        child: Text(
+                          questions[index].answers!.keys.toList()[i],
+                          style: TextStyle(
+                              color: Color.fromRGBO(30, 28, 40, 1),
                               fontSize: 18.0,
-                            )),
+                              fontWeight: FontWeight.w600),
+                        ),
                       ),
                     ),
                   SizedBox(

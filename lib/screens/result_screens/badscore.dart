@@ -5,20 +5,15 @@ import 'package:quizz_app/ui/shared/color.dart';
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: avoid_unnecessary_containers
 
-class ResultScreen extends StatefulWidget {
+class BadScore extends StatefulWidget {
   int score;
-  ResultScreen(this.score, {Key? key}) : super(key: key);
+  BadScore(this.score, {Key? key}) : super(key: key);
 
   @override
-  _ResultScreenState createState() => _ResultScreenState();
+  _BadScoreState createState() => _BadScoreState();
 }
-// Zedmetsaxelebis darkmevis dros
-// List<int> badScore = [1, 2, 3];
-// List<int> averageScore = [4, 5, 6];
-// List<int> goodScore = [7, 8];
-// List<int> excellentScore = [9, 10];
 
-class _ResultScreenState extends State<ResultScreen> {
+class _BadScoreState extends State<BadScore> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,8 +39,7 @@ class _ResultScreenState extends State<ResultScreen> {
           ),
           Text(
             "You Score is",
-            style: TextStyle(
-                color: Color.fromRGBO(255, 196, 18, 1), fontSize: 34.0),
+            style: TextStyle(color: Colors.white, fontSize: 34.0),
           ),
           SizedBox(
             height: 20.0,
@@ -53,18 +47,18 @@ class _ResultScreenState extends State<ResultScreen> {
           Text(
             "${widget.score}",
             style: TextStyle(
-              color: Color.fromRGBO(255, 196, 18, 1),
+              color: Colors.orange,
               fontSize: 85.0,
               fontWeight: FontWeight.bold,
             ),
           ),
           SizedBox(
+            height: 20.0,
+          ),
+          SizedBox(
             height: 100.0,
           ),
           ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Color.fromRGBO(255, 196, 18, 1),
-            ),
             onPressed: () {
               Navigator.push(
                   context,
@@ -74,9 +68,7 @@ class _ResultScreenState extends State<ResultScreen> {
             },
             child: Text(
               "Reapeat the quizz",
-              style: TextStyle(
-                color: Color.fromRGBO(30, 28, 40, 1),
-              ),
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ],

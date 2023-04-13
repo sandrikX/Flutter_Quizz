@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizz_app/model/question_model.dart';
 import 'package:quizz_app/ui/shared/color.dart';
+// ignore_for_file: prefer_const_constructors
 
 Widget questionWidget(
     QuestionModel questionModel, void Function() function, bool presed) {

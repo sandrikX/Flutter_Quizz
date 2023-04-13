@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quizz_app/screens/quizz_screen.dart';
 import 'package:quizz_app/ui/shared/color.dart';
+// ignore_for_file: prefer_const_constructors
 
 class MainMenu extends StatefulWidget {
   const MainMenu({Key? key}) : super(key: key);
@@ -26,10 +27,10 @@ class _MainMenuState extends State<MainMenu> {
           children: [
             const Center(
               child: Text(
-                "Quizz App",
+                "Car Questionare App",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 48,
+                  fontSize: 36,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -53,7 +54,7 @@ class _MainMenuState extends State<MainMenu> {
                     child: Text(
                       "Start the Quizz",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color.fromRGBO(30, 28, 40, 1),
                         fontSize: 26.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -62,15 +63,15 @@ class _MainMenuState extends State<MainMenu> {
                 ),
               ),
             ),
-            const Center(
-              child: Text(
-                "Made with ❤ by Mouheb Boucherb",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            // const Center(
+            //   child: Text(
+            //     "Made with ❤ by Mouheb Boucherb",
+            //     textAlign: TextAlign.center,
+            //     style: TextStyle(
+            //       color: Colors.white,
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

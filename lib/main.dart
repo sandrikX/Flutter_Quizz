@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizz_app/screens/main_menu.dart';
+// ignore_for_file: prefer_const_constructors
 
 void main() {
   runApp(const MyApp());
